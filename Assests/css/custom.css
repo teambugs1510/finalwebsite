@@ -123,14 +123,15 @@ a{
     padding: 6px 0;
 }
 .textOfBox{
-    padding: 0px 16px;
+    /* padding: 0px 16px; */
     font-size: 16px;
 }
 .list{
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 .list li{
     font-size: 16px; 
+    list-style: disc;
 }
 .footer{
     background-color: var(--orange);
@@ -515,7 +516,7 @@ text-align: center;
     transform: scale(1.1);
 }
 .backScroll{
-    background: url('../img/back.jpg');
+    background: url('../img/backcroped.jpg');
     background-attachment: fixed;
     background-position: 50% -36px;
     height: 70vh;
@@ -555,9 +556,7 @@ padding: 1px 5px;
     text-transform: capitalize;
     padding: 4px 15px;
 }
-.owl-carousel .owl-item img{
-    height: 100%;
-}
+ 
 @media (max-width:320px)  {
      /* smartphones, iPhone, portrait 480x320 phones */ 
      .navbar-brand span{
@@ -580,7 +579,9 @@ padding: 1px 5px;
     }
 }
 @media (min-width:481px)  { 
-    
+    .navbar-brand span{
+        font-size: 18px;
+    }
     }
 
 @media (max-width:641px)  {
@@ -588,7 +589,7 @@ padding: 1px 5px;
         display:inline-flex;
     }
     .navbar-brand span{
-        font-size: 22px;
+        font-size: 18px;
     }
     .card-horizontal {
         display: block;
@@ -598,5 +599,14 @@ padding: 1px 5px;
     }
     .card {
         margin-bottom: 20px;
+    }
+    .navbar-brand img {
+        max-width: 80px;
+    }
+    .backScroll{
+        height: auto; 
+    }
+    .backScroll p{
+        text-align: left;
     }
 }
