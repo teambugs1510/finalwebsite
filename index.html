@@ -92,9 +92,9 @@
     </div>
 </section> -->
     <section class="black">
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark" id="top">
-                <a class="navbar-brand" href="#"><img src="./Assests/img/logo.png" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="./Assests/img/logo.png" alt=""><span>Shri Ram Krishna</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -102,7 +102,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav mx-auto">
                         <li>
                             <div class="dropdown show">
                                 <a class=" nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
@@ -139,106 +139,128 @@
                                     <a class="dropdown-item" href="#">Engineering</a>
                                     <a class="dropdown-item" href="#">Computer Application</a>
                                     <a class="dropdown-item" href="#">Management Studies</a>
-                                    <a class="dropdown-item" href="#">Education</a>
+                                    <!-- <a class="dropdown-item" href="#">Education</a> -->
 
                                 </div>
                             </div>
                         </li>
                         <li>
                             <a href="#" class="nav-link">Admission Form</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Life at REI</a>
+                        </li> 
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <li id="RollNo">
+                            <input type="text" placeholder="Enrollment Number" name="" id="">
+                            <button class="btn btn-primary">search</button>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </section>
-    <section>
+    <section class="grin">
         <div class="container-fluid p-0">
             <div class="owl-carousel owl-theme">
-                <div class="item"><img src="./Assests/img/h1.jpg" alt=""></div>
-                <div class="item"><img src="./Assests/img/h2.jpg" alt=""></div>
-                <div class="item"><img src="./Assests/img/h1.jpg" alt=""></div>
-                <div class="item"><img src="./Assests/img/h2.jpg" alt=""></div>
-
+                <div class="item"><img src="./Assests/img/bb1.jpg" alt=""></div>
+                <div class="item"><img src="./Assests/img/bb2.jpg" alt=""></div>
+                <!-- <div class="item"><img src="./Assests/img/banner3.jpg" alt=""></div> -->
+                <!-- <div class="item"><img src="./Assests/img/banner4.jpg" alt=""></div>
+                <div class="item"><img src="./Assests/img/banner5.jpg" alt=""></div>
+                <div class="item"><img src="./Assests/img/banner6.jpg" alt=""></div>  -->
             </div>
         </div>
     </section>
-    <section class="sec">
+    <section class="sec grin">
         <div class="container">
-            <h1 class="text-center mb-4">Section Name</h1>
             <nav id="midNav">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home"
                         type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
                     <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile"
-                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Courses</button>
                     <button class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
                         type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="imgBox">
-                                <img src="./Assests/img/h1.jpg" alt="">
+                                <img src="./Assests/img/1.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="TextBox">
-                                <h3 class="boxTitle">AITM</h3>
-                                <p>AITM
-                                    ADVANCED INSTITUTE OF TECHNOLOGY AND MANAGEMENT (AITM) is a pioneer engineering
-                                    college in the Palwal District, set up in the year 2006. AITM believes in imparting
+                                <h3 class="boxTitle">RKI</h3>
+                                <p>RKI
+                                    shriramkrishna INSTITUTE OF TECHNOLOGY AND MANAGEMENT is a pioneer engineering
+                                    INSTITUTE, RKI believes in imparting
                                     futuristic technical education & instills a high pattern of discipline through
                                     dedicated & trained faculty, who shall set global standards, making the students
                                     technologically superior, ethically strong with a renewed moral sensibility</p>
-                                <button class="customBtnOne">Read More...</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="imgBox">
-                                <img src="./Assests/img/h2.jpg" alt="">
+                        <div class="col-lg-12">
+                        <div class="courseBox row">
+                            <div class="col-12 mt-3">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="img-square-wrapper">
+                                            <img class="" src="Assests/img/tech.jpg" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Engineering</h4>
+                                            <p class="card-text">Engineering is a stream of education that involves the application of Science, Technology, and Mathematics to innovate, design, develop and maintain machines, structures, software, hardware, and systems & processes. This field offers a range of career opportunities across all industries, making it one of the most sought-after courses pursued by students after Class 12, especially those from the Science stream.</p>
+                                        </div>
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                           
+                              <div class="col-12 mt-3">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="img-square-wrapper">
+                                            <img class="" src="Assests/img/computer_scrince.jpg" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Computer Applications</h4>
+                                            <p class="card-text">Computer Applications play a very important role in today's scenario as every individual is significantly dependent on machines. A computer is one such machine, which has made its presence in every walk of our life. With the wide range of applications, it has to offer, the need for learning computer science is now more than ever. The recent boom in the IT Industry tells us that the experts in the field of computer applications are needed both in India and abroad.</p>
+                                        </div>
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="img-square-wrapper">
+                                            <img class="" src="Assests/img/managemnt_studies.jpg" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Management Courses</h4>
+                                            <p class="card-text">Management Courses provide you with a broad foundation of business disciplines, such as Finance, Economics, and Marketing. You will also have an in-depth understanding of various management theories and their relationships with different industries. Some of the most popular Management courses are those that provide students with new-age specializations or electives. These courses are popular because they offer something new and teach learners modern-day skills and knowledge.</p>
+                                        </div>
+                                    </div>
+                                     
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="TextBox">
-                                <h3 class="boxTitle">AITM</h3>
-                                <p>AITM
-                                    ADVANCED INSTITUTE OF TECHNOLOGY AND MANAGEMENT (AITM) is a pioneer engineering
-                                    college in the Palwal District, set up in the year 2006. AITM believes in imparting
-                                    futuristic technical education & instills a high pattern of discipline through
-                                    dedicated & trained faculty, who shall set global standards, making the students
-                                    technologically superior, ethically strong with a renewed moral sensibility</p>
-                                <button class="customBtnOne">Read More...</button>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="imgBox">
-                                <img src="./Assests/img/h1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="TextBox">
-                                <h3 class="boxTitle">AITM</h3>
-                                <p>AITM
-                                    ADVANCED INSTITUTE OF TECHNOLOGY AND MANAGEMENT (AITM) is a pioneer engineering
-                                    college in the Palwal District, set up in the year 2006. AITM believes in imparting
-                                    futuristic technical education & instills a high pattern of discipline through
-                                    dedicated & trained faculty, who shall set global standards, making the students
-                                    technologically superior, ethically strong with a renewed moral sensibility</p>
-                                <button class="customBtnOne">Read More...</button>
+                                <h2 class="text-center mb-5">Email ID</h2>
+                                <p class="text-center my-5"><a class="emailIDINbox" href="mailto:shriramkrishnaedu@gmail.com">shriramkrishnaedu@gmail.com</a></p>
+                                <!-- <button class="customBtnOne">Read More...</button> -->
                             </div>
                         </div>
                     </div>
@@ -251,13 +273,13 @@
         <div class="container-fluid p-0 gallery">
             <h1 class="text-center mb-4">TAKE A CAMPUS TOUR</h1>
             <div class="row no-gutters">
-                <div class="col-lg-3 nof"><img src="./Assests/img/11.jpg" alt=""></div> 
-                <div class="col-lg-3 nof"><img src="./Assests/img/14.jpg" alt=""></div>
-                <div class="col-lg-3 nof"><img src="./Assests/img/11.jpg" alt=""></div>
-                <div class="col-lg-3 nof"><img src="./Assests/img/14.jpg" alt=""></div>
+                <div class="col-lg-3 nof"><img src="./Assests/img/g1.jpg" alt=""></div> 
+                <div class="col-lg-3 nof"><img src="./Assests/img/g2.jpg" alt=""></div>
+                <div class="col-lg-3 nof"><img src="./Assests/img/g3.png" alt=""></div>
+                <div class="col-lg-3 nof"><img src="./Assests/img/g4.jpg" alt=""></div>
 
-                <div class="col-lg-3 nof"><img src="./Assests/img/11.jpg" alt=""></div> 
-                <div class="col-lg-3 nof"><img src="./Assests/img/14.jpg" alt=""></div>
+                <div class="col-lg-3 nof"><img src="./Assests/img/g5.jpg" alt=""></div> 
+                <div class="col-lg-3 nof"><img src="./Assests/img/g6.jpg" alt=""></div>
                 <div class="col-lg-3 nof"><img src="./Assests/img/11.jpg" alt=""></div>
                 <div class="col-lg-3 nof"><img src="./Assests/img/14.jpg" alt=""></div>
             </div>
@@ -265,33 +287,31 @@
     </section>
     <section class="sec grin">
         <div class="container">
-            <h1 class="text-center mb-4">Section Name</h1>
+            <!-- <h1 class="text-center mb-4">Section Name</h1> -->
             <br>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="./Assests/img/h1.jpg" class="card-img-top" alt="...">
+                        <img src="./Assests/img/mission.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text">Outstanding education that is affordable to all 
+                                Cultivating great careers. <a href="" class="readMore">Read More...</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="./Assests/img/h1.jpg" class="card-img-top" alt="...">
+                        <img src="./Assests/img/visison2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text">To impart value based Vision and Mission, world class education with  <a href="" class="readMore">Read More...</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="./Assests/img/h1.jpg" class="card-img-top" alt="...">
+                        <img src="./Assests/img/core.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text">Persistent excellence Challenge and ambition Open ended and <a href="" class="readMore">Read More...</a></p>
                         </div>
                     </div>
                 </div>
@@ -351,9 +371,9 @@
     <section class="sec backScroll">
         <div class="container">
             <h1 class="Lowheading">
-                OUR MISSION
+                About Us..
             </h1>
-            <p>To provide high quality, student-centered education and lifelong learning opportunities for the communities we serve.</p>
+            <p>.</p>
             <p>At AEI, students pursue their goals in an environment that values diversity, individuality, mutual respect and free exchange of ideas.</p>
         </div>
     </section>
@@ -386,7 +406,7 @@
                     <div class="single_footer single_footer_address">
                         <h4>Subscribe today</h4>
                         <div class="signup_form">
-                            <a href="mailto:aaejaz709@gmail.com" class="email">Email Us..</a>
+                            <a href="mailto:shriramkrishnaedu@gmail.com" class="email">Email Us..</a>
                         </div>
                     </div>
                     <div class="social_profile">
@@ -401,7 +421,7 @@
             </div><!--- END ROW --> 
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <p class="copyright">Copyright © 2023 <a href="#">Admin</a>.</p>
+                    <p class="copyright">Copyright © 2023 <a href="#">Shri Ram Krishna</a>.</p>
                 </div><!--- END COL -->                 
             </div><!--- END ROW -->                 
         </div><!--- END CONTAINER -->
