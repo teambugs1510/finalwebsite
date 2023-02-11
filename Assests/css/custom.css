@@ -535,19 +535,19 @@ text-align: center;
     margin-bottom: 20px;
     font-size: 18px;
 }
+.dropdown-item:hover{
+    background-color: var(--orange);
+    color: #301934;
+}
 #RollNo{
     display: flex;
     align-items: center;
 }
 #RollNo input{
-margin-right: 10px;
-border-radius: 3px;
-border: 2px solid var(--orange);
-padding: 1px 5px;
-}
-.dropdown-item:hover{
-    background-color: var(--orange);
-    color: #301934;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 2px solid var(--orange);
+    padding: 1px 5px;
 }
 #RollNo button{
     color: var(--dark-purple);
@@ -556,7 +556,46 @@ padding: 1px 5px;
     text-transform: capitalize;
     padding: 4px 15px;
 }
- 
+#Results input{
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 2px solid var(--dark-purple);
+    padding: 1px 5px;
+}
+#Results button{
+    color: var(--orange);
+    background-color: var(--dark-purple)!important;
+    border: none;
+    text-transform: capitalize;
+    padding: 4px 15px;
+    margin-bottom: 5px;
+}
+.resultsHeroImg{
+    width: 160px;
+    height: 190px;
+    margin: 10px 0;
+    border-radius: 5px;
+/* box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 10%); */
+/* background-color: rgb(228 228 228 / 15%); */
+}
+.ResultsDetials{
+    /* border:1px solid var(--orange); */
+    padding: 10px 15px;
+    width: 520px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+backdrop-filter: blur(8px); /* Chrome and Opera */
+box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 10%);
+background-color: rgb(228 228 228 / 15%);
+}
+.ResultsDetials p{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.ResultsDetials span{
+    font-weight: normal;
+}
 @media (max-width:320px)  {
      /* smartphones, iPhone, portrait 480x320 phones */ 
      .navbar-brand span{
