@@ -16,30 +16,34 @@
     <script src="./Assests/js/bootstrap.min.js"></script>
     <script src="./Assests/js/owl.carousel.min.js"></script> 
     <script>
-        $(document).ready(() => {
-  let url = location.href.replace(/\/$/, "");
-  if (location.hash) {
-    const hash = url.split("#");
-    $('#myTab a[href="#'+hash[1]+'"]').tab("show");
-    url = location.href.replace(/\/#/, "#");
-    history.replaceState(null, null, url);
-    setTimeout(() => {
-      $(window).scrollTop(0);
-    }, 400);
-  } 
-  
-  $('a[data-toggle="tab"]').on("click", function() {
-    let newUrl;
-    const hash = $(this).attr("href");
-    if(hash == "#nav-profile") {
-      newUrl = url.split("#")[0];
-    } else {
-      newUrl = url.split("#")[0] + hash;
-    }
-    newUrl += "/";
-    history.replaceState(null, null, newUrl);
-  });
-});
+        $(() => {
+        let url = window.location.hash;
+        $(".nav-link").removeClass("active");
+        $(".tab-pane").removeClass("active");
+        $(".tab-pane").removeClass("show");
+        var navclass = "";
+        var tabclass = "";
+        if(url === ""){
+            navclass = "#Mission";
+            tabclass = "#nav-mission";
+        }
+        if(url === "#missionBox"){
+            navclass = "#Mission";
+            tabclass = "#nav-mission";
+        }
+        if(url === "#visionBox"){
+            navclass = "#Vision";
+            tabclass = "#nav-vision";
+        }
+        if(url === "#coreBox"){
+            navclass = "#Core";
+            tabclass = "#nav-core";
+        }
+
+        $(navclass).addClass("active");
+        $(tabclass).addClass("active");
+        $(tabclass).addClass("show");
+        });
     </script>
 </head>
 <body>
@@ -88,12 +92,9 @@
                                     Courses
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#courses" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile"
-                                     role="tab" aria-controls="nav-profile" aria-selected="true">Engineering</a>
-                                    <a class="dropdown-item" href="#">Computer Application</a>
-                                    <a class="dropdown-item" href="#">Management Studies</a>
-                                    <!-- <a class="dropdown-item" href="#">Education</a> -->
-
+                                    <a class="dropdown-item" href="index.html#courses" >Engineering</a>
+                                    <a class="dropdown-item" href="index.html#courses">Computer Application</a>
+                                    <a class="dropdown-item" href="index.html#courses">Management Studies</a>
                                 </div>
                             </div>
                         </li>
@@ -116,16 +117,16 @@
         <div class="container">
             <nav id="midNav">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home"
-                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Mission</button>
-                    <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile"
-                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Vision</button>
-                    <button class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
-                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Core Values</button>
+                    <button class="nav-link active" id="Mission" data-toggle="tab" data-target="#nav-mission"
+                        type="button" role="tab" aria-controls="nav-mission" aria-selected="true">Mission</button>
+                    <button class="nav-link" id="Vision" data-toggle="tab" data-target="#nav-vision"
+                        type="button" role="tab" aria-controls="nav-vision" aria-selected="false">Vision</button>
+                    <button class="nav-link" id="Core" data-toggle="tab" data-target="#nav-core"
+                        type="button" role="tab" aria-controls="nav-core" aria-selected="false">Core Values</button>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="tab-pane fade show active" id="nav-mission" role="tabpanel" aria-labelledby="Mission">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="imgBox">
@@ -151,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="Vision">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="imgBox">
@@ -174,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="tab-pane fade" id="nav-core" role="tabpanel" aria-labelledby="Core">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="imgBox">

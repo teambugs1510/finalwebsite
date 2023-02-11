@@ -38,59 +38,35 @@
                     }
                 }
             })
+
+            
+
         }) 
+
+        $(() => {
+        let url = window.location.hash;
+        $(".nav-link").removeClass("active");
+        $(".tab-pane").removeClass("active");
+        $(".tab-pane").removeClass("show");
+        var navclass = "";
+        var tabclass = "";
+        if(url === ""){
+            navclass = "#nav-home-tab";
+            tabclass = "#nav-home";
+        }
+        if(url === "#courses"){
+            navclass = "#navprofiletab";
+            tabclass = "#nav-profile";
+        }
+        $(navclass).addClass("active");
+        $(tabclass).addClass("active");
+        $(tabclass).addClass("show");
+        });
     </script>
 </head>
 
 <body>
-    <!-- <section >
-    <div class="container-fluid py-3 topNav">
-        <div class="row">
-            <div class="col-lg-3 order-lg-0 order-1"> 
-                <div class="mailBox text-center">
-                    <h5 class="text-center purple">Mail To.</h5>
-                    <a class="purpleAnchor" href="mailto:text@text.com">mailto:text@text.com</a>
-                </div>
-            </div>
-            <div class="col-lg-6 order-lg-1 order-0"> 
-                <h1 class="websiteHeroName">shriramkrishna</h1>
-            </div>
-            <div class="col-lg-3 order-lg-2 order-2">
-                <div class="socailBox">
-                    <h5 class="text-center purple">Social Media</h5>
-                    <div class="linksBox text-center">
-                        <a href=""><img src="./Assests/img/facebook.png" class="socLinks" alt=""></a>
-                        <a href=""><img src="./Assests/img/instagram.png" class="socLinks" alt=""></a>
-                        <a href=""><img src="./Assests/img/twitter.png" class="socLinks" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-    <!-- <section>
-    <div class="MainNavbar container-fluid secondNav py-sm-4 py-lg-2 py-4">
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <div class="mainLogo mb-lg-0 mb-3">
-                    <a href=""><img src="./Assests/img/logo.png" class="logo" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-6 ctText">
-                <h4 class="text-center">Educational institute</h4>
-                <h5 class="text-center">Recognized by Govt of India,</h5>
-                <h5 class="text-center">As 150 certified, 9001-2000</h5>
-            </div>
-            <div class="col-lg-3 ctText">
-                <h4 class="text-center mt-lg-2 mt-2">Roll No.</h4>
-                <div class="linksBox text-center">
-                <input type="text" placeholder="Enter Roll No," class="SearchBox">
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-    <section class="black">
+    <section class="black ">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark" id="top">
                 <a class="navbar-brand" href="index.html"><img src="./Assests/img/logo.png" alt=""><span>Shri Ram Krishna</span></a>
@@ -176,7 +152,7 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home"
                         type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                    <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile"
+                    <button class="nav-link" id="navprofiletab" data-toggle="tab" data-target="#nav-profile"
                         type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Courses</button>
                     <button class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
                         type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
@@ -203,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="navprofiletab">
                     <div class="row">
                         <div class="col-lg-12">
                         <div class="courseBox row">
@@ -295,7 +271,7 @@
                         <img src="./Assests/img/mission.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Outstanding education that is affordable to all 
-                                Cultivating great careers. <a href="innerpage.html#nav-profile" class="readMore">Read More...</a></p>
+                                Cultivating great careers. <a href="innerpage.html#missionBox" class="readMore">Read More...</a></p>
                         </div>
                     </div>
                 </div>
@@ -303,7 +279,7 @@
                     <div class="card">
                         <img src="./Assests/img/visison2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">To impart value based Vision and Mission, world class education with  <a href="innerpage.html" class="readMore">Read More...</a></p>
+                            <p class="card-text">To impart value based Vision and Mission, world class education with  <a href="innerpage.html#visionBox" class="readMore">Read More...</a></p>
                         </div>
                     </div>
                 </div>
@@ -311,7 +287,7 @@
                     <div class="card">
                         <img src="./Assests/img/core.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Persistent excellence Challenge and ambition Open ended and <a href="innerpage.html" class="readMore">Read More...</a></p>
+                            <p class="card-text">Persistent excellence Challenge and ambition Open ended and <a href="innerpage.html#coreBox" class="readMore">Read More...</a></p>
                         </div>
                     </div>
                 </div>
